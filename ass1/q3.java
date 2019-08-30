@@ -33,6 +33,7 @@ class Number {
 		for (int i = 1; i <= n; i++) {
 			f = f * i;
 		}
+		return f;
 	}
 	public int sumOfDigit() {
 		int n = num;
@@ -41,6 +42,7 @@ class Number {
 			sum = sum + (n % 10);
 			n = n / 10;
 		}
+		return sum;
 	}
 	public int reverseNum() {
 		StringBuilder b = new StringBuilder(num);
@@ -50,14 +52,14 @@ class Number {
 		switch(op) {
 			case "+":
 				return num + b;
-				break;
 			case "-":
 				return num - b;
 			case "*":
 				return num * b;
 			case "/":
-				return num / b;
+				return (double)num / b;
 		};
+		return 0.0;
 	}	
 	
 }

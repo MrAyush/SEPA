@@ -1,16 +1,16 @@
 class Date {
-	int date, month, year;
+	int day, month, year;
 
-	public Data(int date, int month, int year) {
-		this.date = date;
+	public Date(int day, int month, int year) {
+		this.day = day;
 		this.month = month;
 		this.year = year;
 	}
 	public void printDate() {
-		print(date + "-" + month + "-" + year);
+		System.out.print(day + "-" + month + "-" + year);
 	}
 	public void calculateAge(Date date) {
-		print(date.year - this.year + " years " + (date.month % this.month) + " months " + (date.day % this.day));
+		System.out.print(date.year - this.year + " years " + (date.month % this.month) + " months " + (date.day % this.day));
 	}
 	
 }
